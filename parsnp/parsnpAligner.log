@@ -1,0 +1,134 @@
+Number of sequences analyzed:        18
+
+Sequence 1 : /hsm/VR0082/shared/data/Elizabethkingia/assemblies/P_2016_03_19_183311659606/SRR3240413_final.fasta.srt
+SRR3240413_final.fasta.srt
+Length:   3911053 bps
+ GC: 1396172.0
+ AT: 2514881.0
+Sequence 2 : fasta//SRR3240397_final.fasta
+SRR3240397_final.fasta
+Length:   3929011 bps
+ GC: 1403543.0
+ AT: 2519308.0
+Sequence 3 : fasta//SRR3240398_final.fasta
+SRR3240398_final.fasta
+Length:   3891005 bps
+ GC: 1389204.0
+ AT: 2487721.0
+Sequence 4 : fasta//SRR3240399_final.fasta
+SRR3240399_final.fasta
+Length:   3917679 bps
+ GC: 1397639.0
+ AT: 2516190.0
+Sequence 5 : fasta//SRR3240400_final.fasta
+SRR3240400_final.fasta
+Length:   3970441 bps
+ GC: 1415999.0
+ AT: 2540802.0
+Sequence 6 : fasta//SRR3240401_final.fasta
+SRR3240401_final.fasta
+Length:   3931081 bps
+ GC: 1405210.0
+ AT: 2519161.0
+Sequence 7 : fasta//SRR3240402_final.fasta
+SRR3240402_final.fasta
+Length:   3921259 bps
+ GC: 1400516.0
+ AT: 2516233.0
+Sequence 8 : fasta//SRR3240403_final.fasta
+SRR3240403_final.fasta
+Length:   3914986 bps
+ GC: 1397084.0
+ AT: 2514492.0
+Sequence 9 : fasta//SRR3240404_final.fasta
+SRR3240404_final.fasta
+Length:   3921622 bps
+ GC: 1399402.0
+ AT: 2517270.0
+Sequence 10 : fasta//SRR3240405_final.fasta
+SRR3240405_final.fasta
+Length:   3949651 bps
+ GC: 1410161.0
+ AT: 2528710.0
+Sequence 11 : fasta//SRR3240406_final.fasta
+SRR3240406_final.fasta
+Length:   3931134 bps
+ GC: 1401032.0
+ AT: 2508982.0
+Sequence 12 : fasta//SRR3240407_final.fasta
+SRR3240407_final.fasta
+Length:   3869103 bps
+ GC: 1381684.0
+ AT: 2477629.0
+Sequence 13 : fasta//SRR3240408_final.fasta
+SRR3240408_final.fasta
+Length:   3915987 bps
+ GC: 1397733.0
+ AT: 2514734.0
+Sequence 14 : fasta//SRR3240409_final.fasta
+SRR3240409_final.fasta
+Length:   3873190 bps
+ GC: 1381042.0
+ AT: 2482248.0
+Sequence 15 : fasta//SRR3240410_final.fasta
+SRR3240410_final.fasta
+Length:   4025512 bps
+ GC: 1426508.0
+ AT: 2575904.0
+Sequence 16 : fasta//SRR3240411_final.fasta
+SRR3240411_final.fasta
+Length:   3911214 bps
+ GC: 1394984.0
+ AT: 2512930.0
+Sequence 17 : fasta//SRR3240412_final.fasta
+SRR3240412_final.fasta
+Length:   3918066 bps
+ GC: 1396787.0
+ AT: 2516879.0
+Sequence 18 : fasta//SRR3240414_final.fasta
+SRR3240414_final.fasta
+Length:   3922137 bps
+ GC: 1398362.0
+ AT: 2519155.0
+d value:   300
+q value:   110
+
+Mum anchor size:   25.0
+Number of MUM anchors found:   181
+Number of MUMs found:   2 
+Total MUMs found((Anchors+MUMs)-filtered):   180
+
+Random MUM length:   1 
+Minimum Cluster length:   21
+Number of MUMs filtered:   3 
+Number of Clusters filtered:   3 
+
+Number of clusters created:   34
+Average number of MUMs per cluster:   5 
+Average cluster length:   110324 bps
+Cluster coverage in sequence 1:   95.9%
+Cluster coverage in sequence 2:   95.6%
+Cluster coverage in sequence 3:   96.8%
+Cluster coverage in sequence 4:   95.8%
+Cluster coverage in sequence 5:   94.8%
+Cluster coverage in sequence 6:   95.6%
+Cluster coverage in sequence 7:   95.8%
+Cluster coverage in sequence 8:   95.9%
+Cluster coverage in sequence 9:   95.8%
+Cluster coverage in sequence 10:   95.2%
+Cluster coverage in sequence 11:   95.9%
+Cluster coverage in sequence 12:   97.2%
+Cluster coverage in sequence 13:   95.9%
+Cluster coverage in sequence 14:   97.1%
+Cluster coverage in sequence 15:   93.7%
+Cluster coverage in sequence 16:   96.0%
+Cluster coverage in sequence 17:   95.8%
+Cluster coverage in sequence 18:   95.7%
+Total coverage among all sequences:   95.6%
+
+ MUM anchor search elapsed time:   37.0s 
+ MUM coarsening elapsed time:   0.0s 
+ MUM filtering elapsed time:   0.0s 
+ MUM clustering elapsed time:   0.0s 
+ Inter-clustering elapsed time:   0.0s 
+ Total running time:   37.0s 
