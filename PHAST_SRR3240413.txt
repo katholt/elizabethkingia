@@ -1,0 +1,38 @@
+Criteria for scoring prophage regions (as intact, questionable, or incomplete):
+Method 1:
+1. If the number of certain phage organism in this table is more than or equal to 100% of the total number of CDS of the region,
+   the region is marked with total score 150. If less than 100%, method 2 and 3 will be used.
+
+Method 2:
+1. If the number of certain phage organism in this table  is more than 50% of the total number of CDS of the region, that phage 
+   organism is considered as the major potential phage for that region; the percentage of the total number
+   of that phage organism in this table in the  total number of proteins of the region is calculated and 
+   then multipled by 100; the percentage of the length of that phage organism in this table in the length 
+   of the region is calculated and then multipled by 50 (phage head's encapsulation capability is considered).
+
+Method 3:
+1. If any of the specific phage-related keywords (such as 'capsid', 'head', 'integrase', 'plate', 'tail', 'fiber',
+   'coat', 'transposase', 'portal', 'terminase', 'protease' or 'lysin') are present, the score will be increased 
+   by 10 for each keyword found.
+2. If the size of the region is greater than 30 Kb, the score will be increased by 10.
+3. If there are at least 40 proteins in the region, the score will be increased by 10.
+4. If all of the phage-related proteins and hypothetical proteins constitute more than 70% of
+   the total number of proteins in the region, the score will be increased by 10.
+
+Compared the total score of method 2 with the total score of method 3, the bigger one is chosen as the total score of the region.
+If the region's total score is less than 70, it is marked as incomplete; if between 70 to 90, it is marked as questionable; if greater than 90, it is marked as intact.
+   
+
+
+Totally 0 intact prophage regions have been identified.
+
+
+
+
+gi|00000000|ref|NC_000000| NODE_1 NODE_1_length_1544818_cov_38.6054_ID_1176 .3911053, gc%: 35.70%
+                                  REGION         REGION_LENGTH            COMPLETENESS(score)           SPECIFIC_KEYWORD                             REGION_POSITION          TRNA_NUM                 TOTAL_PROTEIN_NUM       PHAGE_HIT_PROTEIN_NUM            HYPOTHETICAL_PROTEIN_NUM         PHAGE+HYPO_PROTEIN_PERCENTAGE    BACTERIAL_PROTEIN_NUM            ATT_SITE_SHOWUP                  PHAGE_SPECIES_NUM                MOST_COMMON_PHAGE_NAME(hit_genes_count)    FIRST_MOST_COMMON_PHAGE_NUM      FIRST_MOST_COMMON_PHAGE_PERCENTAGE   GC_PERCENTAGE                 
+                                 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                  1              9Kb                      incomplete(20)                tail                                         679092-688095            0                        8                       6                                0                                75%                              2                                no                               6                                PHAGE_Megavi_chiliensis_NC_016072(3),PHAGE_Megavi_lba_NC_020232(2),PHAGE_Plankt_PaV_LD_NC_016564(1),PHAGE_Faustovirus_NC_024302(1),PHAGE_Salmon_c341_NC_013059(1),PHAGE_Escher_ECML_117_NC_025441(1),PHAGE_Entero_Sf101_NC_027398(1),PHAGE_Pseudo_vB_PaeP_Tr60_Ab31_NC_023575(1),PHAGE_Cafete_BV_PW1_NC_014637(1),PHAGE_Pseudo_vB_PaeS_PMG1_NC_016765(1),PHAGE_Tricho_ni_ascovirus_2c_NC_008518(1),PHAGE_Chryso_virus_NC_028094(1),PHAGE_Escher_TL_2011b_NC_019445(1),PHAGE_Staphy_MCE_2014_NC_025416(1),PHAGE_Acanth_mimivirus_NC_014649(1),PHAGE_Bathyc_BpV1_NC_014765(1)   1                                37.5%                            36.11%                        
+                                  2              7.8Kb                    incomplete(10)                NA                                           1117201-1125025          0                        10                      6                                1                                70%                              3                                no                               6                                PHAGE_Pandor_inopinatum_NC_026440(2),PHAGE_Pandor_dulcis_NC_021858(2),PHAGE_Pandor_salinus_NC_022098(1),PHAGE_Plankt_PaV_LD_NC_016564(1),PHAGE_Acidia_virus_NC_029316(1),PHAGE_Synech_S_SSM7_NC_015287(1),PHAGE_Sinorh_phiN3_NC_028945(1),PHAGE_Mycoba_Wildcat_NC_008206(1),PHAGE_Mycoba_Myrna_NC_011273(1),PHAGE_Prochl_P_TIM68_NC_028955(1),PHAGE_Bacill_G_NC_023719(1),PHAGE_Pelagi_HTVC008M_NC_020484(1),PHAGE_Sinorh_phiM12_NC_027204(1),PHAGE_Escher_121Q_NC_025447(1)   1                                20%                              36.49%                        
+                                  3              8.3Kb                    incomplete(10)                NA                                           3556777-3565113          0                        9                       6                                1                                77.7%                            2                                no                               5                                PHAGE_Bacill_MG_B1_NC_021336(1),PHAGE_Acidia_virus_NC_029316(1),PHAGE_Parame_bursaria_Chlorella_virus_1_NC_000852(1),PHAGE_Lactoc_P087_NC_012663(1),PHAGE_Bacill_TsarBomba_NC_028890(1),PHAGE_Parame_bursaria_Chlorella_virus_NY2A_NC_009898(1),PHAGE_Sulfol_SMV2_NC_029020(1),PHAGE_Aureoc_anophagefferens_virus_MM_2014_NC_024697(1),PHAGE_Port_m_virus_NC_028047(1),PHAGE_Melbournevirus_NC_025412(1),PHAGE_Entero_186_NC_001317(1),PHAGE_Lausan_NC_015326(1),PHAGE_Parame_bursaria_Chlorella_virus_FR483_NC_008603(1),PHAGE_Marseillevirus_NC_013756(1),PHAGE_Parame_bursaria_Chlorella_virus_AR158_NC_009899(1),PHAGE_Acanth_moumouvirus_NC_020104(1)   2                                11.11%                           36.91%                        
+                                  4              7.8Kb                    incomplete(10)                NA                                           3580628-3588493          0                        8                       7                                0                                87.5%                            1                                no                               5                                PHAGE_Sphing_PAU_NC_019521(3),PHAGE_Entero_phi92_NC_023693(3),PHAGE_Escher_phAPEC8_NC_020079(3),PHAGE_Yellow_1_NC_028112(2),PHAGE_Bacill_G_NC_023719(2),PHAGE_Ostreo_OlV1_NC_014766(1),PHAGE_Ostreo_2_NC_028091(1),PHAGE_Amsact_moorei_entomopoxvirus__L__NC_002520(1),PHAGE_Synech_S_CAM1_NC_020837(1),PHAGE_Caulob_Cr30_NC_025422(1),PHAGE_Aureoc_anophagefferens_virus_MM_2014_NC_024697(1),PHAGE_Anomal_entomopoxvirus_NC_023426(1),PHAGE_Acanth_turfacea_Chlorella_virus_1_NC_008724(1),PHAGE_Bathyc_BpV1_NC_014765(1),PHAGE_Strept_Jay2Jay_NC_029098(1),PHAGE_Plankt_PaV_LD_NC_016564(1),PHAGE_Pithov_sibericum_NC_023423(1),PHAGE_Prochl_P_TIM68_NC_028955(1),PHAGE_Bacill_SPBc2_NC_001884(1),PHAGE_Synech_S_SM2_NC_015279(1),PHAGE_Microm_MpV1_NC_014767(1),PHAGE_Chryso_virus_NC_028094(1),PHAGE_Ostreo_tauri_virus_1_NC_013288(1)   3                                37.5%                            33.45%                        
