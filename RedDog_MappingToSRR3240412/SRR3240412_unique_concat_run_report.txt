@@ -1,0 +1,89 @@
+RedDog V1beta.8 2016-03-20 23:11:59.034285
+
+Copyright (c) 2015, David Edwards, Bernie Pope, Kat Holt
+All rights reserved. (see README.txt for more details)
+
+Run History:
+Run	date/time	sequences	version
+first	2016-03-20 23:11:59.034285	18	V1beta.8
+
+Modules:
+	Python/2.7.10-vlsci_intel-2015.08.25
+	BWA/0.6.2-vlsci_intel-2015.08.25
+	SAMtools/1.2-vlsci_intel-2015.08.25-HTSlib-1.2.1
+	BCFtools/1.2-vlsci_intel-2015.08.25
+	ea-utils/1.1.2-537-GCC-4.9.2
+	Bowtie2/2.2.5-vlsci_intel-2015.08.25
+	FastTree/2.1.8-vlsci_intel-2015.08.25
+
+Reference: /vlsci/VR0082/shared/data/Elizabethkingia/assemblies/SRR3240412_HySS/SRR3240412_unique_concat.fasta
+Reference Format: FASTA
+No. of Replicons: 1
+
+No. of Sequences: 18
+Sequence Type: Illumina paired-end
+Sequences List: /vlsci/VR0082/shared/data/Elizabethkingia/mapping_200316/full_sequence_list.txt
+Run type: phylogeny
+Mapping: bowtie
+bowtie mapping preset: --sensitive-local
+bowtie X option: 2000
+
+Filter Options:
+Minimum read depth: 5
+
+Pass/fail criteria:
+Coverage of replicon: 50%
+Depth of reads: 10
+Reads mapped: 50%
+
+Replicon tested for percent of reads mapped:
+Replicon	Percent of total
+SRR3240412_unique_concat	100.0
+
+Allele conservation ratio: 0.95
+
+Outgroup calling
+Standard Deviations from mean SNP count: 2
+
+Replicon: SRR3240412_unique_concat
+None of the 18 isolates failed
+
+Read History:
+reads	full path	date/time	read type	mapping	version
+SRR3240397_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240397_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240398_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240398_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240399_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240399_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240400_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240400_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240401_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240401_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240402_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240402_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/first_batch	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240403_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240403_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240404_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240404_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240405_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240405_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240406_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240406_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240407_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240407_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240408_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240408_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240409_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240409_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240410_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240410_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240411_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240411_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240412_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240412_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240413_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240413_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240414_1.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+SRR3240414_2.fastq.gz	/vlsci/VR0082/shared/data/Elizabethkingia/reads	2016-03-20 23:11:59.034285	PE	bowtie	V1beta.8
+
