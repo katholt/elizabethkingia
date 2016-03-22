@@ -1,0 +1,1260 @@
+INFO: Namespace(blastall_exe='blastall', blastn_exe='blastn', classes='genomes/classes.txt', force=True, formatdb_exe='formatdb', fragsize=1020, gformat='pdf', gmethod='mpl', graphics=True, indirname='genomes', jobprefix='ANI', labels='genomes/labels.txt', logfile='2016-03-21_Elizabethkingia_ANIm.log', makeblastdb_exe='makeblastdb', maxmatch=False, method='ANIm', noclobber=False, nucmer_exe='nucmer', outdirname='Elizabethkingia_ANIm', scheduler='multiprocessing', seed=None, skip_blastn=False, skip_nucmer=False, subsample=None, verbose=True, write_excel=False)
+INFO: command-line: /Users/lpritc/Development/GitHub/pyani/average_nucleotide_identity.py -i genomes -o Elizabethkingia_ANIm -v -m ANIm -g --gformat pdf --labels genomes/labels.txt --classes genomes/classes.txt -f -l 2016-03-21_Elizabethkingia_ANIm.log
+INFO: Input directory: genomes
+INFO: Removing directory Elizabethkingia_ANIm and everything below it
+INFO: Creating directory Elizabethkingia_ANIm
+INFO: Output directory: Elizabethkingia_ANIm
+INFO: Using ANI method: ANIm
+INFO: Using scheduler method: multiprocessing
+INFO: Identifying FASTA files in genomes
+INFO: Input files:
+	genomes/GCA_000773465.1.fasta
+	genomes/GCA_000982575.1.fasta
+	genomes/GCF_000240095.1.fasta
+	genomes/GCF_000331815.1.fasta
+	genomes/GCF_000367325.1.fasta
+	genomes/GCF_000401415.1.fasta
+	genomes/GCF_000447375.1.fasta
+	genomes/GCF_000495935.1.fasta
+	genomes/GCF_000495935.2.fasta
+	genomes/GCF_000495955.1.fasta
+	genomes/GCF_000495975.1.fasta
+	genomes/GCF_000495995.1.fasta
+	genomes/GCF_000496015.1.fasta
+	genomes/GCF_000496035.1.fasta
+	genomes/GCF_000496055.1.fasta
+	genomes/GCF_000689455.1.fasta
+	genomes/GCF_000689515.1.fasta
+	genomes/GCF_000735205.1.fasta
+	genomes/GCF_000769445.1.fasta
+	genomes/GCF_000955665.1.fasta
+	genomes/GCF_001011675.1.fasta
+	genomes/GCF_001050935.1.fasta
+	genomes/GCF_001051975.1.fasta
+	genomes/GCF_001482795.1.fasta
+	genomes/GCF_001483145.1.fasta
+	genomes/GCF_001521735.1.fasta
+	genomes/GCF_001521745.1.fasta
+	genomes/GCF_001521755.1.fasta
+	genomes/GCF_001521765.1.fasta
+	genomes/GCF_001521815.1.fasta
+	genomes/SRR3240397_final.fasta
+	genomes/SRR3240398_final.fasta
+	genomes/SRR3240399_final.fasta
+	genomes/SRR3240400_final.fasta
+	genomes/SRR3240401_final.fasta
+	genomes/SRR3240402_final.fasta
+	genomes/SRR3240403_final.fasta
+	genomes/SRR3240404_final.fasta
+	genomes/SRR3240405_final.fasta
+	genomes/SRR3240406_final.fasta
+	genomes/SRR3240407_final.fasta
+	genomes/SRR3240408_final.fasta
+	genomes/SRR3240409_final.fasta
+	genomes/SRR3240410_final.fasta
+	genomes/SRR3240411_final.fasta
+	genomes/SRR3240412_final.fasta
+	genomes/SRR3240413_final.fasta
+	genomes/SRR3240414_final.fasta
+INFO: Processing input sequence lengths
+INFO: Sequence lengths:
+	SRR3240401_final: 3924371
+	GCF_000401415.1: 3796928
+	SRR3240410_final: 4002412
+	GCF_000735205.1: 3936249
+	GCF_000447375.1: 3960658
+	GCF_000331815.1: 4032720
+	SRR3240411_final: 3907914
+	SRR3240399_final: 3913829
+	SRR3240407_final: 3859313
+	SRR3240403_final: 3911576
+	GCF_001011675.1: 3938967
+	GCF_001521815.1: 3959896
+	GCF_001482795.1: 4023312
+	GCF_001483145.1: 4286053
+	GCF_000689455.1: 4036754
+	GCF_000495975.1: 4334105
+	GCA_000773465.1: 4019824
+	GCF_000496055.1: 4091484
+	GCF_000769445.1: 4578109
+	SRR3240412_final: 3913666
+	SRR3240408_final: 3912467
+	GCF_000495935.2: 4369828
+	GCF_001521745.1: 4247713
+	SRR3240398_final: 3876925
+	SRR3240405_final: 3938871
+	GCA_000982575.1: 3912805
+	GCF_001521755.1: 3853643
+	GCF_000367325.1: 3840286
+	SRR3240414_final: 3917517
+	SRR3240397_final: 3922851
+	SRR3240413_final: 3911053
+	GCF_000496035.1: 4123800
+	GCF_000955665.1: 4242519
+	GCF_000689515.1: 4032057
+	GCF_000240095.1: 4045712
+	GCF_001521735.1: 4229770
+	GCF_001051975.1: 3590869
+	GCF_000495955.1: 4334646
+	GCF_000495935.1: 4337616
+	GCF_001050935.1: 3922153
+	SRR3240404_final: 3916672
+	SRR3240406_final: 3910014
+	SRR3240402_final: 3916749
+	GCF_000496015.1: 4239486
+	GCF_000495995.1: 4334661
+	SRR3240400_final: 3956801
+	SRR3240409_final: 3863290
+	GCF_001521765.1: 4339697
+INFO: Carrying out ANIm analysis
+INFO: Running ANIm
+INFO: Generating NUCmer command-lines
+INFO: Running jobs with multiprocessing
+INFO: Command pool now running:
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240397_final genomes/GCF_001482795.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000447375.1 genomes/GCF_000240095.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240409_final_vs_SRR3240410_final genomes/SRR3240409_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001011675.1 genomes/GCF_000495955.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000689455.1 genomes/GCF_000240095.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_000955665.1 genomes/GCF_000689515.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240412_final genomes/SRR3240402_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001050935.1 genomes/GCA_000982575.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240410_final genomes/GCA_000982575.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240413_final genomes/GCF_000495935.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001521765.1 genomes/GCF_000495975.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240410_final genomes/GCF_001521755.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000689515.1 genomes/GCF_000495955.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001521735.1 genomes/GCA_000982575.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000735205.1 genomes/GCF_000331815.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240402_final genomes/GCF_001521735.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240401_final genomes/GCF_000447375.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240404_final genomes/GCF_000495955.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001521745.1 genomes/GCF_000495995.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240407_final genomes/GCF_000401415.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240403_final genomes/GCF_000495955.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001050935.1 genomes/GCF_000495955.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001482795.1 genomes/GCF_000240095.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240404_final genomes/GCF_000447375.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240404_final genomes/GCF_000496055.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240403_final genomes/GCF_000689455.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001050935.1 genomes/GCA_000773465.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000689515.1 genomes/GCF_000331815.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240410_final genomes/GCF_000367325.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240398_final genomes/GCF_000401415.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001521765.1 genomes/GCF_000496015.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240407_final genomes/GCF_000495935.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001051975.1 genomes/GCF_000496015.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240397_final genomes/GCF_000331815.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001483145.1 genomes/GCF_001011675.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240400_final genomes/GCF_001521815.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240404_final genomes/SRR3240402_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240403_final genomes/GCF_001521815.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240411_final genomes/GCF_000495935.2.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001051975.1 genomes/GCF_000447375.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001521755.1 genomes/GCA_000773465.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001521745.1 genomes/GCF_000495935.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000496035.1 genomes/GCF_000495995.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240405_final genomes/GCF_001011675.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240414_final genomes/GCF_001011675.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240403_final genomes/SRR3240401_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240406_final genomes/SRR3240400_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240400_final genomes/GCF_000496055.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001521765.1 genomes/GCF_000495935.2.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000496035.1 genomes/GCA_000773465.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001483145.1 genomes/GCF_000401415.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000331815.1 genomes/GCA_000773465.1.fasta genomes/GCF_000331815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001521735.1 genomes/GCF_000495995.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240405_final genomes/GCF_000495995.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000735205.1 genomes/GCF_000496035.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000367325.1 genomes/GCA_000982575.1.fasta genomes/GCF_000367325.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240414_final genomes/GCF_000331815.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001482795.1 genomes/GCF_000331815.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240409_final genomes/SRR3240401_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000689455.1 genomes/GCF_000447375.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240402_final genomes/GCF_000735205.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240407_final genomes/GCF_000495955.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000496035.1 genomes/GCF_000367325.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001521755.1 genomes/GCF_000495975.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240410_final_vs_SRR3240414_final genomes/SRR3240410_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240409_final genomes/SRR3240400_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000495995.1 genomes/GCF_000367325.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240402_final genomes/GCF_000495935.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240409_final genomes/GCF_000496035.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240404_final genomes/GCF_001521765.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000689515.1 genomes/GCF_000367325.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_GCF_001521815.1 genomes/GCF_001521735.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240406_final genomes/GCF_000955665.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240411_final genomes/GCF_000689515.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240411_final genomes/SRR3240399_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240412_final genomes/GCF_000447375.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240412_final genomes/GCF_000495995.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240410_final genomes/GCF_000401415.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240401_final genomes/GCF_000331815.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240404_final genomes/GCF_001483145.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001483145.1 genomes/GCA_000773465.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240413_final genomes/SRR3240397_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000496035.1 genomes/GCF_000240095.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_000735205.1 genomes/GCF_000689515.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240412_final_vs_SRR3240414_final genomes/SRR3240412_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240409_final genomes/GCF_000367325.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240399_final genomes/GCF_001521815.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240398_final genomes/GCF_000735205.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240413_final genomes/SRR3240404_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001521765.1 genomes/GCF_000495955.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240397_final genomes/GCF_000401415.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001482795.1 genomes/GCF_001011675.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240402_final genomes/GCF_001521745.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240402_final genomes/GCF_000495995.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240406_final genomes/GCF_000496055.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240397_final genomes/GCF_001521755.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240400_final genomes/GCF_000735205.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001482795.1 genomes/GCA_000773465.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240401_final genomes/SRR3240399_final.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240406_final genomes/GCF_001483145.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240414_final genomes/GCA_000773465.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240407_final genomes/GCF_001521745.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000496055.1 genomes/GCF_000331815.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240404_final genomes/SRR3240403_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001482795.1 genomes/GCF_001050935.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240406_final genomes/GCF_001482795.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240408_final genomes/SRR3240404_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000495955.1 genomes/GCA_000982575.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240409_final genomes/GCF_001521735.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240406_final genomes/GCF_000495935.2.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240410_final genomes/GCF_000689455.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000495935.2 genomes/GCF_000367325.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240413_final genomes/SRR3240407_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001483145.1 genomes/GCF_000496055.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240407_final genomes/GCF_001050935.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000496035.1 genomes/GCF_000331815.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240402_final genomes/GCF_000495935.2.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240404_final genomes/GCF_000495995.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240401_final genomes/GCF_001483145.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000955665.1 genomes/GCF_000495935.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240407_final genomes/SRR3240404_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240411_final genomes/SRR3240406_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240398_final genomes/GCA_000982575.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000496055.1 genomes/GCF_000447375.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_GCF_001521815.1 genomes/GCF_001521755.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001521765.1 genomes/GCF_000447375.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001483145.1 genomes/GCF_000331815.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001050935.1 genomes/GCF_000240095.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240410_final genomes/GCF_000496055.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240407_final genomes/GCF_001483145.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240411_final genomes/SRR3240407_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240401_final genomes/GCF_000496055.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240408_final genomes/GCA_000773465.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240411_final genomes/GCF_000735205.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240413_final genomes/GCF_000769445.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001050935.1 genomes/GCF_000955665.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000496015.1 genomes/GCF_000495975.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240413_final genomes/SRR3240408_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240412_final genomes/GCF_000401415.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001050935.1 genomes/GCF_000447375.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000735205.1 genomes/GCF_000447375.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240411_final genomes/SRR3240401_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001521745.1 genomes/GCF_000367325.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240413_final genomes/GCF_000689515.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240401_final genomes/GCF_000401415.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001521735.1 genomes/GCF_000495955.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240405_final genomes/SRR3240398_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240402_final genomes/GCF_000496015.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240408_final genomes/GCF_001050935.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240405_final genomes/GCF_000495955.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240409_final genomes/GCF_001011675.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240407_final genomes/SRR3240401_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000495935.1 genomes/GCF_000331815.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001050935.1 genomes/GCF_000495995.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240411_final_vs_SRR3240414_final genomes/SRR3240411_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240414_final genomes/GCF_001050935.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001050935.1 genomes/GCF_000496035.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240401_final genomes/SRR3240397_final.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001521755.1 genomes/GCF_000496055.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240406_final genomes/GCF_001521765.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240414_final genomes/GCF_001521745.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240397_final genomes/GCA_000982575.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000955665.1 genomes/GCF_000240095.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240413_final genomes/GCF_000331815.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240399_final genomes/GCF_000401415.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000955665.1 genomes/GCF_000495955.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240409_final genomes/GCF_001521745.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240404_final genomes/GCF_001521815.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001051975.1 genomes/GCF_000495935.2.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001521765.1 genomes/GCF_000689455.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001482795.1 genomes/GCF_000735205.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240403_final genomes/GCF_001521745.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240401_final genomes/GCF_001521755.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240402_final genomes/GCF_001011675.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240398_final genomes/GCF_001521735.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240397_final genomes/GCF_000495935.2.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240414_final genomes/GCF_000495995.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000495995.1 genomes/GCF_000331815.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240399_final genomes/GCF_001483145.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240414_final genomes/SRR3240399_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240402_final genomes/SRR3240399_final.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240407_final genomes/GCF_000769445.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240398_final genomes/GCF_001521765.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240403_final genomes/GCF_001051975.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001521745.1 genomes/GCF_000689515.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000495935.2 genomes/GCF_000240095.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000955665.1 genomes/GCF_000401415.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240402_final genomes/GCF_000331815.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240411_final genomes/GCF_001521765.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240400_final genomes/GCF_000495995.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000769445.1 genomes/GCF_000495935.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240400_final genomes/GCF_000495975.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001521755.1 genomes/GCF_000496035.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240414_final genomes/GCF_001521735.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240414_final genomes/GCF_000769445.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240405_final genomes/GCF_001521745.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240413_final genomes/GCF_000495955.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240403_final genomes/GCF_001483145.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240414_final genomes/GCF_000495935.2.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000495995.1 genomes/GCF_000495935.2.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000495975.1 genomes/GCF_000331815.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240411_final genomes/GCF_001521755.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240411_final genomes/GCF_001050935.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001521735.1 genomes/GCF_000496055.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001521745.1 genomes/GCF_000689455.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001483145.1 genomes/GCF_000495935.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240408_final genomes/GCF_000496015.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_GCF_001521755.1 genomes/GCF_001521735.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240407_final genomes/SRR3240399_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240400_final genomes/GCA_000982575.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000495955.1 genomes/GCF_000495935.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240398_final genomes/GCF_001011675.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240411_final genomes/SRR3240404_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001051975.1 genomes/GCF_000240095.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240411_final genomes/SRR3240397_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240403_final genomes/GCF_001521735.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240398_final genomes/GCF_000495935.2.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240410_final genomes/GCF_000495975.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240407_final genomes/GCF_001482795.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000689455.1 genomes/GCF_000367325.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001483145.1 genomes/GCF_000495995.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240399_final genomes/GCF_000495975.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240408_final genomes/GCF_000496055.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001051975.1 genomes/GCF_000689515.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240408_final genomes/GCF_001483145.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240398_final genomes/GCF_001521755.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240399_final genomes/GCF_001521765.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240399_final genomes/GCF_000447375.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240411_final genomes/GCF_000367325.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240407_final genomes/SRR3240405_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001050935.1 genomes/GCF_000496055.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240410_final genomes/SRR3240403_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000496055.1 genomes/GCA_000773465.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240410_final genomes/GCA_000773465.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240408_final genomes/GCF_001482795.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240412_final genomes/SRR3240399_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240404_final genomes/GCF_001482795.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240401_final genomes/GCF_001011675.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000495995.1 genomes/GCF_000495975.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240412_final genomes/GCF_001521765.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000496055.1 genomes/GCF_000495955.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001521745.1 genomes/GCF_000495935.2.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240401_final genomes/GCF_000735205.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240414_final genomes/GCA_000982575.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001521745.1 genomes/GCF_000401415.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240406_final genomes/GCF_000401415.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000495975.1 genomes/GCA_000773465.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240410_final genomes/GCF_001482795.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001483145.1 genomes/GCF_000689515.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240413_final genomes/GCF_001482795.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240398_final genomes/SRR3240397_final.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001483145.1 genomes/GCF_000495975.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001483145.1 genomes/GCF_001050935.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001521735.1 genomes/GCF_000769445.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000689515.1 genomes/GCF_000495995.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240405_final genomes/GCF_000496015.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001521755.1 genomes/GCF_000331815.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240408_final genomes/SRR3240401_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240401_final genomes/GCF_000496015.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001521755.1 genomes/GCF_000240095.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000367325.1 genomes/GCF_000331815.1.fasta genomes/GCF_000367325.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240397_final genomes/GCF_001521815.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240407_final genomes/GCF_000689455.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240403_final genomes/SRR3240397_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240411_final genomes/GCF_001051975.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240407_final genomes/SRR3240397_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240399_final genomes/GCF_000955665.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240408_final genomes/SRR3240406_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240404_final genomes/GCF_000955665.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240409_final genomes/GCF_001051975.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240408_final genomes/SRR3240402_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240398_final genomes/GCF_001521815.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240411_final genomes/GCF_000495995.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240407_final genomes/GCF_000331815.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240410_final genomes/GCF_001011675.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000735205.1 genomes/GCF_000401415.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000496015.1 genomes/GCF_000401415.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240410_final genomes/GCF_000331815.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240410_final genomes/GCF_000496015.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240402_final genomes/GCF_000495955.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240413_final genomes/GCF_001521765.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001521735.1 genomes/GCF_001050935.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000735205.1 genomes/GCF_000495935.2.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240410_final genomes/GCF_000735205.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240405_final genomes/GCF_001051975.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240399_final genomes/GCF_001011675.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240408_final genomes/SRR3240400_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240401_final genomes/GCF_000495935.2.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000495935.1 genomes/GCA_000773465.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240398_final genomes/GCF_000495935.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001011675.1 genomes/GCA_000773465.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240399_final genomes/SRR3240398_final.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000495935.2 genomes/GCA_000773465.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001521745.1 genomes/GCF_001051975.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001521745.1 genomes/GCF_000735205.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240398_final genomes/GCF_000447375.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240406_final genomes/SRR3240403_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240400_final genomes/GCF_001521765.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000240095.1 genomes/GCA_000773465.1.fasta genomes/GCF_000240095.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000495935.1 genomes/GCA_000982575.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000496035.1 genomes/GCF_000495935.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240408_final genomes/GCF_001011675.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240414_final genomes/GCF_001521765.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000769445.1 genomes/GCF_000401415.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240399_final genomes/GCF_000495955.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240407_final genomes/SRR3240403_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000496055.1 genomes/GCF_000496015.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240413_final genomes/GCF_000401415.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240405_final genomes/GCA_000982575.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001050935.1 genomes/GCF_000496015.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240403_final genomes/GCF_000496055.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001521815.1 genomes/GCF_001482795.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240402_final genomes/GCF_001050935.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240414_final genomes/GCF_001051975.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240404_final genomes/SRR3240398_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000447375.1 genomes/GCA_000773465.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240407_final genomes/GCF_001521815.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240406_final genomes/SRR3240399_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_GCF_001521735.1 genomes/GCF_001483145.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001521815.1 genomes/GCF_001050935.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240407_final genomes/GCF_000495995.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001521765.1 genomes/GCF_000401415.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240401_final genomes/GCF_000955665.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_GCF_001521765.1 genomes/GCF_001521755.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000689455.1 genomes/GCF_000495975.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000689455.1 genomes/GCF_000495955.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001521745.1 genomes/GCA_000773465.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240414_final genomes/GCF_000495975.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240412_final genomes/GCF_000240095.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000955665.1 genomes/GCF_000495995.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000447375.1 genomes/GCF_000401415.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240414_final genomes/GCF_001483145.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001483145.1 genomes/GCF_000496035.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240404_final genomes/GCF_000495935.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240411_final genomes/GCF_001483145.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001521815.1 genomes/GCF_000495935.2.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240412_final genomes/GCF_000496055.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240399_final genomes/GCF_001482795.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240405_final genomes/GCF_000689515.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000240095.1 genomes/GCA_000982575.1.fasta genomes/GCF_000240095.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240401_final genomes/GCF_000495975.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240405_final genomes/GCF_001521765.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240408_final genomes/GCF_000401415.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000689515.1 genomes/GCF_000495935.2.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240403_final genomes/GCF_000769445.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240402_final genomes/GCF_000496035.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001011675.1 genomes/GCF_000367325.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240407_final genomes/GCF_000496035.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001521735.1 genomes/GCF_000689455.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000689455.1 genomes/GCA_000982575.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000955665.1 genomes/GCF_000495975.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240397_final genomes/GCF_001483145.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240411_final genomes/GCF_001521735.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000495975.1 genomes/GCF_000495935.2.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240404_final genomes/GCF_000367325.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240407_final genomes/GCF_000689515.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240411_final genomes/GCA_000773465.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240412_final genomes/SRR3240400_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001521765.1 genomes/GCF_000769445.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240412_final genomes/GCF_000689515.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000495935.1 genomes/GCF_000367325.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000447375.1 genomes/GCF_000367325.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240409_final genomes/SRR3240407_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_GCF_001521765.1 genomes/GCF_001521745.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240411_final genomes/SRR3240398_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001051975.1 genomes/GCF_000401415.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001482795.1 genomes/GCF_000496055.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240408_final genomes/GCF_000495955.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001521745.1 genomes/GCF_000769445.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240406_final genomes/GCF_001011675.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000689455.1 genomes/GCF_000331815.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240402_final genomes/GCF_000689455.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240411_final genomes/GCF_000331815.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240414_final genomes/GCF_001482795.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240397_final genomes/GCF_001521735.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240408_final genomes/SRR3240399_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001521745.1 genomes/GCF_000496015.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240408_final genomes/GCF_000331815.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000735205.1 genomes/GCF_000495995.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000496035.1 genomes/GCF_000401415.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240411_final genomes/GCF_000769445.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_GCF_001521745.1 genomes/GCF_001483145.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240412_final genomes/GCF_000495935.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240400_final genomes/GCF_001521755.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000495935.1 genomes/GCF_000401415.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240398_final genomes/GCF_000495975.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000495995.1 genomes/GCF_000401415.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240405_final genomes/GCF_000735205.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000496015.1 genomes/GCF_000331815.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240405_final genomes/GCF_000495935.2.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240413_final genomes/SRR3240406_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000496035.1 genomes/GCF_000495975.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001483145.1 genomes/GCF_000689455.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240405_final genomes/SRR3240402_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240405_final genomes/GCF_000367325.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000769445.1 genomes/GCF_000495975.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240404_final genomes/GCF_001521745.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240409_final genomes/GCF_001521815.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240410_final genomes/GCF_001483145.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240405_final genomes/GCF_000496035.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240401_final genomes/GCA_000773465.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240398_final genomes/GCF_000496035.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240408_final genomes/GCF_000240095.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240397_final genomes/GCF_000955665.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240405_final genomes/GCF_000331815.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240408_final genomes/GCF_000735205.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240403_final genomes/GCF_001011675.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240406_final genomes/GCF_000367325.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240398_final genomes/GCF_001482795.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240400_final genomes/GCF_000240095.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240400_final genomes/GCF_000495955.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001051975.1 genomes/GCF_000955665.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240397_final genomes/GCF_001011675.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000735205.1 genomes/GCA_000982575.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240399_final genomes/GCF_000689515.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240402_final genomes/GCF_001051975.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240408_final genomes/GCF_000495935.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240399_final genomes/GCF_001521755.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240413_final genomes/GCF_001051975.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000495975.1 genomes/GCF_000447375.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240397_final genomes/GCF_000447375.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240403_final genomes/GCF_000447375.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000955665.1 genomes/GCF_000496015.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240402_final genomes/GCF_001521755.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240407_final genomes/SRR3240398_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240405_final genomes/SRR3240403_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240413_final genomes/GCF_000367325.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240401_final genomes/SRR3240398_final.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240398_final genomes/GCF_000496055.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240400_final genomes/GCF_000955665.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240413_final genomes/GCF_000955665.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240413_final genomes/GCA_000982575.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240409_final genomes/GCF_001521765.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240402_final genomes/GCF_001521815.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240397_final genomes/GCF_000496015.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240409_final genomes/GCA_000773465.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240399_final genomes/GCF_000331815.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001521745.1 genomes/GCF_001482795.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001011675.1 genomes/GCF_000955665.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240410_final genomes/SRR3240400_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240409_final_vs_SRR3240414_final genomes/SRR3240409_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000495975.1 genomes/GCF_000401415.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240412_final genomes/GCF_001521815.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240400_final genomes/SRR3240398_final.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240398_final genomes/GCF_000495995.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000401415.1 genomes/GCA_000773465.1.fasta genomes/GCF_000401415.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240412_final genomes/SRR3240401_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240412_final genomes/GCF_000495935.2.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000495975.1 genomes/GCF_000495955.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000496015.1 genomes/GCF_000367325.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001521755.1 genomes/GCF_000401415.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001050935.1 genomes/GCF_001011675.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001521765.1 genomes/GCA_000982575.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240402_final genomes/GCF_000401415.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000689515.1 genomes/GCF_000240095.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240398_final genomes/GCF_000495955.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000689455.1 genomes/GCF_000496035.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240414_final genomes/SRR3240403_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240404_final genomes/GCF_000495975.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240404_final genomes/SRR3240400_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240406_final genomes/GCA_000773465.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240403_final genomes/GCF_000495995.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240412_final genomes/GCF_001521745.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240406_final genomes/GCF_001051975.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240397_final genomes/GCF_000240095.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_000735205.1 genomes/GCF_000496055.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240398_final genomes/GCF_000331815.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240401_final genomes/GCF_001521735.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240400_final genomes/GCF_001483145.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240407_final genomes/GCF_000367325.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240406_final genomes/GCF_000495995.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240407_final genomes/GCF_000447375.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001521755.1 genomes/GCF_000769445.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240411_final genomes/SRR3240402_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240404_final genomes/GCF_000735205.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_GCF_001521765.1 genomes/GCF_001483145.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_GCF_001521755.1 genomes/GCF_001521745.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240413_final genomes/SRR3240398_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240401_final genomes/GCF_000769445.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001011675.1 genomes/GCF_000495975.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001521815.1 genomes/GCF_000496055.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240410_final genomes/GCF_001521815.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240412_final genomes/GCF_000331815.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001482795.1 genomes/GCF_001051975.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000495955.1 genomes/GCA_000773465.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240404_final genomes/GCF_000496015.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001521765.1 genomes/GCF_000495935.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240409_final genomes/SRR3240405_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000401415.1 genomes/GCF_000331815.1.fasta genomes/GCF_000401415.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000496035.1 genomes/GCF_000495955.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001521815.1 genomes/GCF_000331815.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001011675.1 genomes/GCF_000401415.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240400_final genomes/GCF_001482795.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000769445.1 genomes/GCF_000495955.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240412_final genomes/GCF_000495955.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240403_final genomes/GCF_000401415.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001521735.1 genomes/GCF_000496035.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240410_final genomes/SRR3240404_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001050935.1 genomes/GCF_000495935.2.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001521745.1 genomes/GCF_000496055.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001051975.1 genomes/GCF_000495935.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240401_final genomes/GCF_001521765.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240401_final genomes/GCF_001521745.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240410_final genomes/SRR3240406_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000495975.1 genomes/GCA_000982575.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240404_final genomes/GCF_000401415.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001521735.1 genomes/GCF_001482795.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240414_final genomes/GCF_000367325.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000769445.1 genomes/GCA_000982575.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240409_final_vs_SRR3240413_final genomes/SRR3240409_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240398_final genomes/GCF_000689455.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240399_final genomes/GCF_000240095.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240399_final genomes/GCF_000496035.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240411_final genomes/SRR3240405_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001521815.1 genomes/GCF_000689455.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240409_final genomes/SRR3240406_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001521815.1 genomes/GCF_001051975.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001521765.1 genomes/GCF_000689515.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240406_final genomes/GCF_000769445.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240414_final genomes/GCF_000689455.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_GCF_001521765.1 genomes/GCF_001521735.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001482795.1 genomes/GCF_000367325.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240412_final genomes/GCF_001482795.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000495975.1 genomes/GCF_000367325.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240413_final genomes/SRR3240405_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240399_final genomes/GCF_001050935.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001011675.1 genomes/GCA_000982575.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240413_final genomes/GCF_000495935.2.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_000955665.1 genomes/GCF_000735205.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240402_final genomes/GCF_001482795.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240400_final genomes/GCF_000689515.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240407_final genomes/SRR3240402_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240411_final_vs_SRR3240413_final genomes/SRR3240411_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240400_final genomes/GCF_001051975.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001011675.1 genomes/GCF_000240095.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000496015.1 genomes/GCF_000495935.2.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240410_final genomes/SRR3240407_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240399_final genomes/GCF_000495935.2.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240399_final genomes/GCF_000495995.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240401_final genomes/GCF_000495955.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240412_final genomes/GCF_001521755.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240413_final genomes/SRR3240399_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000495995.1 genomes/GCA_000773465.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240402_final genomes/GCF_000496055.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240410_final genomes/SRR3240397_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001482795.1 genomes/GCF_000689455.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240404_final genomes/GCF_000240095.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240408_final genomes/GCA_000982575.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240405_final genomes/GCF_001482795.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240402_final genomes/GCA_000773465.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001521755.1 genomes/GCF_000495935.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240400_final genomes/GCF_000495935.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000401415.1 genomes/GCF_000240095.1.fasta genomes/GCF_000401415.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240401_final genomes/GCF_000689515.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001521755.1 genomes/GCF_001051975.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240410_final genomes/GCF_000689515.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001521755.1 genomes/GCF_000447375.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240412_final genomes/SRR3240408_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240397_final genomes/GCF_000495995.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240412_final genomes/SRR3240397_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240408_final genomes/GCF_000955665.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000769445.1 genomes/GCF_000367325.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240404_final genomes/GCA_000982575.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240413_final genomes/GCF_000495975.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240409_final genomes/GCF_000495975.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000496055.1 genomes/GCF_000367325.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000769445.1 genomes/GCF_000495995.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240397_final genomes/GCF_000735205.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240398_final genomes/GCF_001051975.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000495955.1 genomes/GCF_000447375.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240406_final genomes/SRR3240402_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240397_final genomes/GCF_001051975.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001521815.1 genomes/GCA_000982575.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001521735.1 genomes/GCF_000331815.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240397_final genomes/GCF_000496055.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_000955665.1 genomes/GCF_000689455.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240410_final genomes/GCF_000496035.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240411_final genomes/GCF_000447375.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000735205.1 genomes/GCF_000495955.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240414_final genomes/SRR3240408_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240411_final genomes/GCF_000496055.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240405_final genomes/SRR3240399_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001011675.1 genomes/GCF_000495995.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240401_final genomes/GCF_000495995.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240397_final genomes/GCF_000689515.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240409_final genomes/GCF_001050935.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000689455.1 genomes/GCF_000496015.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000495995.1 genomes/GCF_000495955.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001482795.1 genomes/GCA_000982575.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001483145.1 genomes/GCF_000240095.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240408_final genomes/GCF_001051975.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240413_final genomes/GCF_001521735.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240414_final genomes/GCF_001521755.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000735205.1 genomes/GCF_000367325.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000495955.1 genomes/GCF_000367325.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240408_final genomes/SRR3240397_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001011675.1 genomes/GCF_000689515.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001483145.1 genomes/GCF_000496015.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240400_final genomes/GCF_000496015.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001521765.1 genomes/GCF_001482795.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000496055.1 genomes/GCF_000495995.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001521745.1 genomes/GCA_000982575.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000955665.1 genomes/GCF_000496035.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001521755.1 genomes/GCF_001482795.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001521755.1 genomes/GCF_000495955.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240410_final genomes/GCF_000955665.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240401_final genomes/GCF_000240095.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000496035.1 genomes/GCF_000495935.2.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001011675.1 genomes/GCF_000496055.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240408_final genomes/GCF_001521765.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240412_final genomes/SRR3240406_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001521755.1 genomes/GCF_000689515.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240403_final genomes/GCF_001521765.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240400_final genomes/GCF_000401415.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240412_final genomes/GCF_001011675.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240414_final genomes/GCF_000401415.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240411_final genomes/GCF_000495935.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240413_final genomes/GCF_000496035.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001483145.1 genomes/GCF_000735205.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240403_final genomes/GCA_000773465.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240411_final genomes/GCA_000982575.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001521735.1 genomes/GCF_000495935.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000495955.1 genomes/GCF_000495935.2.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240408_final genomes/GCF_000495995.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001482795.1 genomes/GCF_000689515.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_000955665.1 genomes/GCF_000769445.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001521765.1 genomes/GCF_000331815.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240406_final genomes/SRR3240398_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240408_final genomes/SRR3240405_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240412_final genomes/GCF_000367325.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240407_final genomes/GCF_000495935.2.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240402_final genomes/SRR3240397_final.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001521815.1 genomes/GCA_000773465.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240410_final genomes/SRR3240408_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001521735.1 genomes/GCF_000496015.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240409_final genomes/GCF_000240095.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240412_final genomes/GCA_000773465.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240403_final genomes/SRR3240399_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240405_final genomes/GCF_000401415.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240405_final genomes/GCF_000240095.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240413_final genomes/GCF_000689455.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240406_final genomes/GCA_000982575.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240409_final genomes/GCF_000496055.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240411_final genomes/GCF_001011675.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001011675.1 genomes/GCF_000447375.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000689515.1 genomes/GCF_000401415.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240409_final genomes/GCF_001482795.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000495995.1 genomes/GCF_000495935.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240408_final genomes/GCF_000689455.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240412_final genomes/GCF_000496015.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000367325.1 genomes/GCF_000240095.1.fasta genomes/GCF_000367325.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001521765.1 genomes/GCF_000496055.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000769445.1 genomes/GCF_000496035.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240405_final genomes/SRR3240400_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240414_final genomes/SRR3240400_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240411_final genomes/SRR3240403_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240400_final genomes/GCF_001521745.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240414_final genomes/GCF_000955665.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240412_final genomes/SRR3240404_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240410_final genomes/SRR3240401_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240413_final genomes/GCA_000773465.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001521735.1 genomes/GCF_000955665.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001051975.1 genomes/GCA_000773465.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240412_final genomes/GCF_001051975.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240406_final genomes/SRR3240404_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000495935.1 genomes/GCF_000447375.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001521755.1 genomes/GCF_001050935.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001521815.1 genomes/GCF_000735205.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240403_final genomes/GCF_001050935.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240409_final genomes/GCF_000447375.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240413_final genomes/SRR3240401_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240398_final genomes/GCF_000769445.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000689515.1 genomes/GCF_000495975.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001521755.1 genomes/GCF_000955665.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240409_final genomes/SRR3240404_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000689515.1 genomes/GCA_000982575.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240399_final genomes/GCF_000496015.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001521745.1 genomes/GCF_000331815.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000496035.1 genomes/GCF_000447375.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240410_final genomes/SRR3240402_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240399_final genomes/GCF_000735205.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240409_final genomes/GCF_000955665.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240414_final genomes/GCF_000689515.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240401_final genomes/GCF_001521815.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001521765.1 genomes/GCF_000495995.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000495975.1 genomes/GCF_000495935.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240399_final genomes/GCF_001521745.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240408_final genomes/GCF_000495935.2.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240397_final genomes/GCF_000769445.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001521735.1 genomes/GCF_000689515.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000495995.1 genomes/GCF_000447375.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240397_final genomes/GCF_000495955.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240402_final genomes/GCF_000240095.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240407_final genomes/GCF_000240095.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240397_final genomes/GCF_000367325.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240406_final genomes/GCF_000689455.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240398_final genomes/GCF_000240095.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240411_final genomes/GCF_000496035.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_000769445.1 genomes/GCF_000735205.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240411_final genomes/GCF_001521815.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240414_final genomes/GCF_000495935.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240400_final genomes/GCF_000495935.2.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240410_final genomes/SRR3240399_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240411_final genomes/SRR3240400_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240409_final genomes/GCA_000982575.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000496055.1 genomes/GCF_000401415.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000496055.1 genomes/GCF_000240095.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240406_final genomes/GCF_000496015.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240400_final genomes/GCF_000496035.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240406_final genomes/GCF_000735205.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001521815.1 genomes/GCF_000495995.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001521815.1 genomes/GCF_000955665.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001051975.1 genomes/GCF_000495955.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240405_final genomes/SRR3240401_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240408_final genomes/GCF_000367325.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000496015.1 genomes/GCA_000982575.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001011675.1 genomes/GCF_000496015.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240406_final genomes/GCF_001050935.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001521735.1 genomes/GCA_000773465.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000769445.1 genomes/GCF_000331815.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240403_final genomes/GCF_000495935.2.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240399_final genomes/GCA_000982575.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240410_final_vs_SRR3240412_final genomes/SRR3240410_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001051975.1 genomes/GCF_000331815.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240400_final genomes/GCA_000773465.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000496015.1 genomes/GCA_000773465.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000689455.1 genomes/GCF_000401415.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001521765.1 genomes/GCF_000735205.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001521765.1 genomes/GCF_000367325.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240401_final genomes/GCF_000495935.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000689515.1 genomes/GCF_000495935.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240406_final genomes/GCF_000496035.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001521765.1 genomes/GCF_001051975.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001483145.1 genomes/GCF_001051975.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240402_final genomes/SRR3240400_final.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000331815.1 genomes/GCA_000982575.1.fasta genomes/GCF_000331815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240414_final genomes/GCF_000447375.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001011675.1 genomes/GCF_000496035.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240413_final genomes/GCF_001521745.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001051975.1 genomes/GCF_000689455.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240402_final genomes/GCF_000689515.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240401_final genomes/GCF_001482795.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240405_final genomes/GCF_000447375.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000495935.1 genomes/GCF_000240095.1.fasta genomes/GCF_000495935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240414_final genomes/SRR3240397_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_GCF_001521735.1 genomes/GCF_001051975.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240406_final genomes/GCF_001521745.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001521815.1 genomes/GCF_000769445.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240403_final genomes/GCF_000496015.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240404_final genomes/GCF_000495935.2.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001483145.1 genomes/GCF_000769445.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001050935.1 genomes/GCF_000495935.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240413_final genomes/GCF_000240095.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240409_final genomes/GCF_000495995.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240413_final genomes/GCF_000447375.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240404_final genomes/GCF_000689455.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000496015.1 genomes/GCF_000240095.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240404_final genomes/GCF_001011675.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001051975.1 genomes/GCF_001050935.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240410_final genomes/GCF_001050935.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_GCF_001521815.1 genomes/GCF_001521745.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240410_final genomes/GCF_001521745.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000735205.1 genomes/GCF_000496015.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000496055.1 genomes/GCF_000495975.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240397_final genomes/GCF_001521745.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240400_final genomes/GCF_000689455.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240412_final_vs_SRR3240413_final genomes/SRR3240412_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000735205.1 genomes/GCA_000773465.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240405_final genomes/GCF_001521755.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240397_final genomes/GCA_000773465.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240404_final genomes/GCF_001051975.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240412_final genomes/GCF_001483145.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000495935.2 genomes/GCA_000982575.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240414_final genomes/GCF_000496035.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240406_final genomes/GCF_000331815.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240409_final genomes/GCF_000689515.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001521765.1 genomes/GCF_001050935.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240412_final genomes/GCF_001050935.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240399_final genomes/GCF_001051975.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240408_final genomes/GCF_000495975.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000496015.1 genomes/GCF_000495935.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240407_final genomes/GCF_001051975.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001482795.1 genomes/GCF_000496015.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240407_final genomes/GCF_000496015.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240408_final genomes/GCF_000769445.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240402_final genomes/GCF_000367325.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240414_final genomes/SRR3240404_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000495935.2 genomes/GCF_000401415.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240410_final genomes/GCF_000495935.2.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240409_final genomes/GCF_000769445.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240409_final genomes/GCF_000401415.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240403_final genomes/GCF_000240095.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240402_final genomes/GCA_000982575.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240410_final genomes/GCF_000240095.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240406_final genomes/GCF_001521755.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240404_final genomes/GCF_000769445.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000769445.1 genomes/GCF_000240095.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240405_final genomes/GCF_001050935.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240409_final_vs_SRR3240411_final genomes/SRR3240409_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_000495955.1 genomes/GCF_000401415.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240405_final genomes/SRR3240397_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001521755.1 genomes/GCF_000495935.2.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240403_final genomes/SRR3240402_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCA_000982575.1 genomes/GCA_000773465.1.fasta genomes/GCA_000982575.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240402_final genomes/GCF_000447375.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000689515.1 genomes/GCA_000773465.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240408_final genomes/SRR3240407_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240414_final genomes/SRR3240407_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240398_final genomes/GCA_000773465.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240404_final genomes/GCF_001521755.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240401_final genomes/SRR3240400_final.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000401415.1 genomes/GCA_000982575.1.fasta genomes/GCF_000401415.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001521815.1 genomes/GCF_000447375.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240405_final genomes/GCF_000495975.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240408_final genomes/GCF_001521815.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001521765.1 genomes/GCF_000496035.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240413_final genomes/GCF_001521815.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240412_final genomes/GCF_000769445.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000496055.1 genomes/GCF_000495935.2.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240399_final genomes/GCF_000495935.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240413_final_vs_SRR3240414_final genomes/SRR3240413_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240404_final genomes/SRR3240401_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001483145.1 genomes/GCA_000982575.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240405_final genomes/GCA_000773465.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000447375.1 genomes/GCA_000982575.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240401_final genomes/GCA_000982575.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000367325.1 genomes/GCA_000773465.1.fasta genomes/GCF_000367325.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240413_final genomes/SRR3240403_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001521815.1 genomes/GCF_000496015.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240412_final genomes/SRR3240405_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240410_final_vs_SRR3240411_final genomes/SRR3240410_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001521735.1 genomes/GCF_000447375.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000496015.1 genomes/GCF_000447375.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000331815.1 genomes/GCF_000240095.1.fasta genomes/GCF_000331815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001482795.1 genomes/GCF_000769445.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_001051975.1 genomes/GCF_000496055.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001521735.1 genomes/GCF_000495935.2.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240405_final genomes/GCF_000769445.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240409_final genomes/SRR3240399_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240398_final genomes/GCF_001521745.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240411_final_vs_SRR3240412_final genomes/SRR3240411_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_SRR3240409_final genomes/GCF_000495935.2.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240403_final genomes/GCF_000495975.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240409_final genomes/SRR3240403_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240409_final genomes/GCF_000495935.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000495955.1 genomes/GCF_000331815.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240407_final genomes/GCF_001011675.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001521745.1 genomes/GCF_000240095.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001482795.1 genomes/GCF_000495935.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240413_final genomes/SRR3240402_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240401_final genomes/GCF_001051975.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000495935.2 genomes/GCF_000447375.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_000735205.1 genomes/GCF_000689455.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000689455.1 genomes/GCA_000773465.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240406_final genomes/GCF_001521815.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240397_final genomes/GCF_000689455.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240408_final genomes/GCF_000689515.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001521815.1 genomes/GCF_001011675.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240399_final genomes/GCF_000689455.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240403_final genomes/GCF_000689515.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001051975.1_vs_SRR3240410_final genomes/GCF_001051975.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240411_final genomes/SRR3240408_final.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240401_final genomes/GCF_001050935.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001050935.1 genomes/GCF_000769445.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000955665.1 genomes/GCF_000367325.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240408_final genomes/GCF_000496035.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_001521755.1 genomes/GCF_000496015.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001521755.1 genomes/GCA_000982575.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001521765.1 genomes/GCF_000240095.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001482795.1 genomes/GCF_000495995.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001050935.1 genomes/GCF_000367325.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240400_final genomes/SRR3240397_final.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240405_final genomes/GCF_000955665.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001521815.1 genomes/GCF_000689515.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001521755.1 genomes/GCF_001011675.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240409_final genomes/GCF_001483145.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240406_final genomes/SRR3240401_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000495995.1 genomes/GCA_000982575.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240407_final genomes/GCA_000982575.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240406_final genomes/GCF_000240095.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000769445.1 genomes/GCF_000447375.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001521735.1 genomes/GCF_000367325.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240403_final genomes/GCF_001521755.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240411_final genomes/GCF_001482795.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240408_final genomes/GCF_000447375.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240398_final genomes/GCF_001050935.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001521735.1 genomes/GCF_001011675.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240404_final genomes/SRR3240397_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240397_final genomes/GCF_000495935.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240411_final genomes/GCF_000240095.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240411_final genomes/GCF_000496015.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240413_final genomes/GCF_001483145.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240408_final_vs_SRR3240409_final genomes/SRR3240408_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240413_final genomes/GCF_000735205.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001521755.1 genomes/GCF_000735205.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_000689515.1 genomes/GCF_000496055.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240409_final genomes/GCF_001521755.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240414_final genomes/SRR3240401_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001521755.1 genomes/GCF_000495995.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001051975.1 genomes/GCF_000735205.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240408_final genomes/SRR3240398_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001521745.1 genomes/GCF_000955665.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240407_final genomes/SRR3240406_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000689455.1 genomes/GCF_000495995.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240402_final genomes/GCF_000955665.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240403_final genomes/GCF_000495935.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240403_final genomes/SRR3240398_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_000769445.1 genomes/GCF_000689515.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001482795.1 genomes/GCF_000495975.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240401_final_vs_SRR3240402_final genomes/SRR3240401_final.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240400_final genomes/GCF_001521735.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240414_final genomes/GCF_001521815.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000495995.1 genomes/GCF_000240095.1.fasta genomes/GCF_000495995.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240400_final genomes/GCF_000447375.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001521815.1 genomes/GCF_000367325.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000495935.2 genomes/GCF_000495935.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000447375.1 genomes/GCF_000331815.1.fasta genomes/GCF_000447375.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240402_final genomes/GCF_000495975.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240413_final genomes/GCF_000496015.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001521755.1 genomes/GCF_000689455.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240414_final genomes/GCF_000496015.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_GCF_001521755.1 genomes/GCF_001483145.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240405_final genomes/GCF_001483145.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240414_final genomes/GCF_000496055.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240413_final genomes/SRR3240400_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240410_final genomes/GCF_000495935.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001521815.1 genomes/GCF_000495935.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000735205.1 genomes/GCF_000240095.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240407_final genomes/GCF_000496055.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_000689515.1 genomes/GCF_000689455.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001011675.1 genomes/GCF_000769445.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240398_final genomes/GCF_000496015.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001521815.1 genomes/GCF_000496035.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001521815.1 genomes/GCF_000495975.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240402_final genomes/GCF_001521765.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240398_final genomes/GCF_000955665.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000955665.1 genomes/GCF_000331815.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001521735.1 genomes/GCF_000495975.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240407_final genomes/GCF_000735205.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240406_final genomes/SRR3240397_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240406_final genomes/GCF_000495955.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240407_final genomes/GCF_001521765.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240399_final genomes/GCA_000773465.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240412_final genomes/GCF_000496035.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240412_final genomes/SRR3240398_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521815.1_vs_SRR3240405_final genomes/GCF_001521815.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240414_final genomes/SRR3240405_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240397_final genomes/GCF_000495975.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240403_final genomes/GCF_000367325.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001521815.1 genomes/GCF_000240095.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240405_final genomes/GCF_000496055.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240403_final genomes/GCF_000496035.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240411_final genomes/GCF_000495975.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240399_final genomes/GCF_000367325.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240405_final genomes/GCF_000689455.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_000689455.1 genomes/GCF_000496055.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_GCF_001483145.1 genomes/GCF_001482795.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240402_final genomes/GCF_001483145.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000496055.1 genomes/GCF_000495935.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240409_final genomes/SRR3240398_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_000401415.1 genomes/GCF_000367325.1.fasta genomes/GCF_000401415.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240413_final genomes/GCF_000495995.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001011675.1 genomes/GCF_000689455.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240408_final genomes/GCF_001521745.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000735205.1 genomes/GCF_000495935.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240411_final genomes/GCF_000689455.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521745.1_vs_SRR3240411_final genomes/GCF_001521745.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000496055.1 genomes/GCA_000982575.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000955665.1 genomes/GCF_000447375.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240411_final genomes/GCF_000955665.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240398_final genomes/GCF_000367325.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_000769445.1 genomes/GCF_000496055.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001050935.1 genomes/GCF_000735205.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_000496015.1 genomes/GCF_000495995.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001051975.1 genomes/GCF_001011675.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001521745.1 genomes/GCF_001011675.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240406_final genomes/GCF_000447375.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000955665.1 genomes/GCA_000982575.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240397_final genomes/GCF_001050935.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240410_final genomes/SRR3240398_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000769445.1 genomes/GCA_000773465.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001051975.1 genomes/GCF_000367325.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001521755.1 genomes/GCF_000367325.1.fasta genomes/GCF_001521755.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240404_final genomes/GCF_001050935.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240407_final genomes/GCA_000773465.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240410_final genomes/GCF_001521735.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240414_final genomes/GCF_000495955.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_GCF_001483145.1 genomes/GCF_000367325.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240407_final genomes/SRR3240400_final.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240405_final genomes/GCF_000495935.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_GCF_001051975.1 genomes/GCF_000769445.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240403_final genomes/GCF_000955665.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_GCF_001521765.1 genomes/GCF_001011675.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001011675.1 genomes/GCF_000495935.2.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240399_final genomes/GCF_001521735.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240404_final genomes/SRR3240399_final.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240406_final genomes/SRR3240405_final.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240402_final genomes/GCF_000769445.1.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_001011675.1 genomes/GCF_000495935.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240412_final genomes/SRR3240403_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001521745.1 genomes/GCF_000447375.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240399_final_vs_SRR3240400_final genomes/SRR3240399_final.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_SRR3240406_final genomes/GCF_000495935.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_000735205.1 genomes/GCF_000495975.1.fasta genomes/GCF_000735205.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240405_final genomes/GCF_001521735.1.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240398_final genomes/GCF_000689515.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001521765.1 genomes/GCF_000955665.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000495955.1 genomes/GCF_000240095.1.fasta genomes/GCF_000495955.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240403_final genomes/GCF_000735205.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000689515.1 genomes/GCF_000496015.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001521735.1 genomes/GCF_000401415.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240400_final genomes/GCF_000331815.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240407_final genomes/GCF_000955665.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001051975.1 genomes/GCF_000495975.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001521735.1 genomes/GCF_000735205.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240412_final genomes/GCA_000982575.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240407_final genomes/GCF_001521755.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240402_final genomes/SRR3240398_final.fasta genomes/SRR3240402_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240399_final genomes/SRR3240397_final.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240411_final genomes/GCF_000495955.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240400_final genomes/GCF_001011675.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240400_final genomes/GCF_000367325.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001521745.1 genomes/GCF_000495955.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_000769445.1 genomes/GCF_000689455.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_GCF_001521745.1 genomes/GCF_001050935.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001051975.1 genomes/GCF_000496035.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240412_final genomes/GCF_000689455.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240412_final genomes/GCF_000495975.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240405_final_vs_SRR3240410_final genomes/SRR3240405_final.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240409_final_vs_SRR3240412_final genomes/SRR3240409_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240410_final genomes/GCF_000769445.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240409_final genomes/GCF_000735205.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_000495975.1 genomes/GCF_000240095.1.fasta genomes/GCF_000495975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_000496015.1 genomes/GCF_000495955.1.fasta genomes/GCF_000496015.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_000955665.1 genomes/GCA_000773465.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001482795.1 genomes/GCF_000496035.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240413_final genomes/GCF_000496055.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000689455.1 genomes/GCF_000495935.2.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000955665.1 genomes/GCF_000495935.2.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_GCF_001050935.1 genomes/GCF_000689515.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240409_final genomes/GCF_000331815.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000496055.1 genomes/GCF_000496035.1.fasta genomes/GCF_000496055.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_000496035.1 genomes/GCA_000982575.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001483145.1 genomes/GCF_000955665.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240398_final_vs_SRR3240414_final genomes/SRR3240398_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_SRR3240404_final genomes/GCA_000773465.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001482795.1 genomes/GCF_000401415.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001482795.1 genomes/GCF_000447375.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_000769445.1 genomes/GCF_000495935.2.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240410_final genomes/GCF_000495955.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001521745.1 genomes/GCF_000495975.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240404_final_vs_SRR3240405_final genomes/SRR3240404_final.fasta genomes/SRR3240405_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240408_final genomes/GCF_001521735.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.1_vs_GCF_000689455.1 genomes/GCF_000495935.1.fasta genomes/GCF_000689455.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_GCF_001482795.1 genomes/GCF_000955665.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_GCF_001050935.1 genomes/GCF_000495975.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240400_final_vs_SRR3240403_final genomes/SRR3240400_final.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_SRR3240399_final genomes/GCF_000496055.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_SRR3240398_final genomes/GCF_001483145.1.fasta genomes/SRR3240398_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240409_final genomes/GCF_000689455.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001050935.1 genomes/GCF_000331815.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240408_final genomes/GCF_001521755.1.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_GCF_001521745.1 genomes/GCF_001521735.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240410_final_vs_SRR3240413_final genomes/SRR3240410_final.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240406_final_vs_SRR3240414_final genomes/SRR3240406_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240403_final_vs_SRR3240408_final genomes/SRR3240403_final.fasta genomes/SRR3240408_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240400_final genomes/GCF_000769445.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240409_final genomes/SRR3240402_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_SRR3240409_final genomes/GCF_000496015.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_SRR3240410_final genomes/GCF_000495995.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001050935.1 genomes/GCF_000401415.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_GCF_001521735.1 genomes/GCF_000240095.1.fasta genomes/GCF_001521735.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496055.1_vs_GCF_000955665.1 genomes/GCF_000496055.1.fasta genomes/GCF_000955665.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240403_final genomes/GCF_000331815.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_GCF_001521815.1 genomes/GCF_001521765.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001483145.1 genomes/GCF_000495935.2.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_SRR3240410_final genomes/GCF_000447375.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240412_final genomes/GCF_001521735.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521755.1_vs_SRR3240413_final genomes/GCF_001521755.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001482795.1_vs_SRR3240403_final genomes/GCF_001482795.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240410_final genomes/GCF_001521765.1.fasta genomes/SRR3240410_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240397_final genomes/GCF_000496035.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_SRR3240409_final genomes/GCF_000495955.1.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240402_final_vs_SRR3240414_final genomes/SRR3240402_final.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_SRR3240411_final genomes/GCF_000401415.1.fasta genomes/SRR3240411_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240404_final genomes/GCF_000496035.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240407_final_vs_SRR3240412_final genomes/SRR3240407_final.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_000495935.2 genomes/GCF_000331815.1.fasta genomes/GCF_000495935.2.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_GCF_001051975.1 genomes/GCA_000982575.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000955665.1_vs_SRR3240412_final genomes/GCF_000955665.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000982575.1_vs_SRR3240403_final genomes/GCA_000982575.1.fasta genomes/SRR3240403_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_SRR3240404_final genomes/GCF_000331815.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000367325.1_vs_SRR3240401_final genomes/GCF_000367325.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001483145.1 genomes/GCF_000495955.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000769445.1 genomes/GCF_000496015.1.fasta genomes/GCF_000769445.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001011675.1_vs_SRR3240413_final genomes/GCF_001011675.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000240095.1_vs_SRR3240414_final genomes/GCF_000240095.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495995.1_vs_GCF_001051975.1 genomes/GCF_000495995.1.fasta genomes/GCF_001051975.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000401415.1_vs_GCF_001521815.1 genomes/GCF_000401415.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001521815.1 genomes/GCF_000495955.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240406_final genomes/GCF_000495975.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240406_final genomes/GCF_001521735.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240407_final genomes/GCF_001521735.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240406_final genomes/GCF_000689515.1.fasta genomes/SRR3240406_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495935.2_vs_GCF_001482795.1 genomes/GCF_000495935.2.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000769445.1_vs_SRR3240399_final genomes/GCF_000769445.1.fasta genomes/SRR3240399_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000331815.1_vs_GCF_001011675.1 genomes/GCF_000331815.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521765.1_vs_SRR3240397_final genomes/GCF_001521765.1.fasta genomes/SRR3240397_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240414_final genomes/GCF_000735205.1.fasta genomes/SRR3240414_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240413_final genomes/GCF_001050935.1.fasta genomes/SRR3240413_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495975.1_vs_SRR3240407_final genomes/GCF_000495975.1.fasta genomes/SRR3240407_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001483145.1_vs_GCF_001521815.1 genomes/GCF_001483145.1.fasta genomes/GCF_001521815.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCA_000773465.1_vs_GCF_001521765.1 genomes/GCA_000773465.1.fasta genomes/GCF_001521765.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_001483145.1 genomes/GCF_000447375.1.fasta genomes/GCF_001483145.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496015.1_vs_GCF_000496035.1 genomes/GCF_000496015.1.fasta genomes/GCF_000496035.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_GCF_001011675.1 genomes/GCF_000735205.1.fasta genomes/GCF_001011675.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001521735.1_vs_SRR3240404_final genomes/GCF_001521735.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_GCF_001050935.1 genomes/GCF_000689455.1.fasta genomes/GCF_001050935.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689515.1_vs_SRR3240404_final genomes/GCF_000689515.1.fasta genomes/SRR3240404_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000495955.1_vs_GCF_001482795.1 genomes/GCF_000495955.1.fasta genomes/GCF_001482795.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000735205.1_vs_SRR3240412_final genomes/GCF_000735205.1.fasta genomes/SRR3240412_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_SRR3240401_final genomes/GCF_000496035.1.fasta genomes/SRR3240401_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/SRR3240397_final_vs_SRR3240409_final genomes/SRR3240397_final.fasta genomes/SRR3240409_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_000689515.1 genomes/GCF_000496035.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000496035.1_vs_GCF_001521745.1 genomes/GCF_000496035.1.fasta genomes/GCF_001521745.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000447375.1_vs_GCF_000689515.1 genomes/GCF_000447375.1.fasta genomes/GCF_000689515.1.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_001050935.1_vs_SRR3240400_final genomes/GCF_001050935.1.fasta genomes/SRR3240400_final.fasta
+INFO: nucmer -mum -p Elizabethkingia_ANIm/GCF_000689455.1_vs_SRR3240401_final genomes/GCF_000689455.1.fasta genomes/SRR3240401_final.fasta
+INFO: Command pool done.
+INFO: Cumulative return value: 0
+INFO: All multiprocessing jobs complete.
+INFO: Processing NUCmer .delta files.
+INFO: Writing ANIm results to Elizabethkingia_ANIm
+INFO: 	ANIm_alignment_lengths
+INFO: 	ANIm_percentage_identity
+INFO: 	ANIm_alignment_coverage
+INFO: 	ANIm_similarity_errors
+INFO: Rendering output graphics
+INFO: Formats requested: pdf
+INFO: Graphics format: pdf
+INFO: Graphics method: mpl
+INFO: Writing heatmap to Elizabethkingia_ANIm/ANIm_alignment_lengths.pdf
+INFO: Writing heatmap to Elizabethkingia_ANIm/ANIm_percentage_identity.pdf
+INFO: Writing heatmap to Elizabethkingia_ANIm/ANIm_alignment_coverage.pdf
+INFO: Writing heatmap to Elizabethkingia_ANIm/ANIm_similarity_errors.pdf
+INFO: Done: Tue Mar 22 01:13:48 2016.
+INFO: Time taken: 4911.19s
